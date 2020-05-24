@@ -1,6 +1,6 @@
 package jp.routine.webstudy;
-
-public class Nichiji {
+import java.io.Serializable;
+public class Nichiji implements Serializable{
 	String date;
 
 	public String getDate()

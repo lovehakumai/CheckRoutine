@@ -21,7 +21,12 @@ Day Su = (Day)application.getAttribute("Sunday");
 <body>
 <p>先週作成したタスクについて自己採点をしてみましょう</p>
 <form action = "/CheckRoutine/Check" method = "post">
-
+<%--
+各曜日の各タスク(7 * 3)に対し3段階の評価をするため計63項目ある
+属性値の付け方は
+"曜日名（英語）の最初の3文字 + (1~9)"
+とする
+ --%>
 <%= M.getDayname() %><br>
 朝のタスク<%= M.getMorningtask() %><br>
 Very Good!<input type = "radio" name="mon1" value = "3"><br>
@@ -36,6 +41,7 @@ Very Good!<input type = "radio" name="mon7" value = "3"><br>
 Good!<input type = "radio" name="mon8" value = "2"><br>
 Normal<input type = "radio" name="mon9" value = "1"><br>
 
+<h3>*********************************************************************************::</h3>
 <%= T.getDayname() %><br>
 朝のタスク<%= T.getMorningtask() %><br>
 Very Good!<input type = "radio" name="tue1" value = "3"><br>
@@ -49,7 +55,7 @@ Normal<input type = "radio" name="tue6" value = "1"><br>
 Very Good!<input type = "radio" name="tue7" value = "3"><br>
 Good<input type = "radio" name="tue8" value = "2"><br>
 Normal<input type = "radio" name="tue9" value = "1"><br>
-
+<h3>*********************************************************************************::</h3>
 <%= W.getDayname() %><br>
 朝のタスク<%= W.getMorningtask() %><br>
 Very Good<input type = "radio" name="wed1" value = "3"><br>
@@ -63,7 +69,7 @@ Normal<input type = "radio" name="wed6" value = "1"><br>
 Very Good!<input type = "radio" name="wed7" value = "3"><br>
 Good!<input type = "radio" name="wed8" value = "2"><br>
 Normal<input type = "radio" name="wed9" value = "1"><br>
-
+<h3>*********************************************************************************::</h3>
 <%= Th.getDayname() %><br>
 朝のタスク<%= Th.getMorningtask() %><br>
 Very Good!<input type = "radio" name="thi1" value = "3"><br>
@@ -77,7 +83,7 @@ Normal<input type = "radio" name="thi6" value = "1"><br>
 Very Good!<input type = "radio" name="thi7" value = "3"><br>
 Good!<input type = "radio" name="thi8" value = "2"><br>
 Normal<input type = "radio" name="thi9" value = "1"><br>
-
+<h3>*********************************************************************************::</h3>
 <%= F.getDayname() %><br>
 朝のタスク<%= F.getMorningtask() %><br>
 Very Good!<input type = "radio" name="fri1" value = "3"><br>
@@ -91,7 +97,7 @@ Normal<input type = "radio" name="fri6" value = "1"><br>
 Very Good!<input type = "radio" name="fri7" value = "3"><br>
 Good!<input type = "radio" name="fri8" value = "2"><br>
 Normal<input type = "radio" name="fri9" value = "1"><br>
-
+<h3>*********************************************************************************::</h3>
 <%= Sa.getDayname() %><br>
 朝のタスク<%= Sa.getMorningtask() %><br>
 Very Good!<input type = "radio" name="sat1" value = "3"><br>
@@ -105,7 +111,7 @@ Normal<input type = "radio" name="sat6" value = "1"><br>
 Very Good!<input type = "radio" name="sat7" value = "3"><br>
 Good!<input type = "radio" name="sat8" value = "2"><br>
 Normal<input type = "radio" name="sat9" value = "1"><br>
-
+<h3>*********************************************************************************::</h3>
 <%= Su.getDayname() %><br>
 朝のタスク<%= Su.getMorningtask() %><br>
 Very Good!<input type = "radio" name="sun1" value = "3"><br>
@@ -119,6 +125,7 @@ Normal<input type = "radio" name="sun6" value = "1"><br>
 Very Good!<input type = "radio" name="sun7" value = "3"><br>
 Good!<input type = "radio" name="sun8" value = "2"><br>
 Normal<input type = "radio" name="sun9" value = "1"><br>
+<p></p>
 <input type="submit" value = "送信">
 </form>
 </body>

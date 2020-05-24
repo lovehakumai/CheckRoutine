@@ -1,10 +1,10 @@
 package jp.routine.webstudy;
-
-public class Day {
-	String Dayname;
-	String morningtask;
-	String daytask;
-	String eveningtask;
+import java.io.Serializable;
+public class Day implements Serializable{
+	private String Dayname;
+	private String morningtask;
+	private String daytask;
+	private String eveningtask;
 	public String getDayname() {
 		return Dayname;
 	}
