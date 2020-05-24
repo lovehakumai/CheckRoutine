@@ -40,75 +40,35 @@ public class Check extends HttpServlet {
 		//繰り返し処理でsumにパラメーターから数値を取得できたら楽なのに
 			SourceNum scn = new SourceNum();
 			int sum = 0;
-			sum += Integer.parseInt(request.getParameter("mon1"));
-			sum += Integer.parseInt(request.getParameter("mon2"));
-			sum += Integer.parseInt(request.getParameter("mon3"));
-			sum += Integer.parseInt(request.getParameter("mon4"));
-			sum += Integer.parseInt(request.getParameter("mon5"));
-			sum += Integer.parseInt(request.getParameter("mon6"));
-			sum += Integer.parseInt(request.getParameter("mon7"));
-			sum += Integer.parseInt(request.getParameter("mon8"));
-			sum += Integer.parseInt(request.getParameter("mon9"));
+			sum += Integer.parseInt(request.getParameter("mon_mor"));
+			sum += Integer.parseInt(request.getParameter("mon_day"));
+			sum += Integer.parseInt(request.getParameter("mon_eve"));
 
-			sum += Integer.parseInt(request.getParameter("tue1"));
-			sum += Integer.parseInt(request.getParameter("tue2"));
-			sum += Integer.parseInt(request.getParameter("tue3"));
-			sum += Integer.parseInt(request.getParameter("tue4"));
-			sum += Integer.parseInt(request.getParameter("tue5"));
-			sum += Integer.parseInt(request.getParameter("tue6"));
-			sum += Integer.parseInt(request.getParameter("tue7"));
-			sum += Integer.parseInt(request.getParameter("tue8"));
-			sum += Integer.parseInt(request.getParameter("tue9"));
 
-			sum += Integer.parseInt(request.getParameter("wed1"));
-			sum += Integer.parseInt(request.getParameter("wed2"));
-			sum += Integer.parseInt(request.getParameter("wed3"));
-			sum += Integer.parseInt(request.getParameter("wed4"));
-			sum += Integer.parseInt(request.getParameter("wed5"));
-			sum += Integer.parseInt(request.getParameter("wed6"));
-			sum += Integer.parseInt(request.getParameter("wed7"));
-			sum += Integer.parseInt(request.getParameter("wed8"));
-			sum += Integer.parseInt(request.getParameter("wed9"));
+			sum += Integer.parseInt(request.getParameter("tue_mor"));
+			sum += Integer.parseInt(request.getParameter("tue_day"));
+			sum += Integer.parseInt(request.getParameter("tue_eve"));
 
-			sum += Integer.parseInt(request.getParameter("thi1"));
-			sum += Integer.parseInt(request.getParameter("thi2"));
-			sum += Integer.parseInt(request.getParameter("thi3"));
-			sum += Integer.parseInt(request.getParameter("thi4"));
-			sum += Integer.parseInt(request.getParameter("thi5"));
-			sum += Integer.parseInt(request.getParameter("thi6"));
-			sum += Integer.parseInt(request.getParameter("thi7"));
-			sum += Integer.parseInt(request.getParameter("thi8"));
-			sum += Integer.parseInt(request.getParameter("thi9"));
+			sum += Integer.parseInt(request.getParameter("wed_mor"));
+			sum += Integer.parseInt(request.getParameter("wed_day"));
+			sum += Integer.parseInt(request.getParameter("wed_eve"));
 
-			sum += Integer.parseInt(request.getParameter("fri1"));
-			sum += Integer.parseInt(request.getParameter("fri2"));
-			sum += Integer.parseInt(request.getParameter("fri3"));
-			sum += Integer.parseInt(request.getParameter("fri4"));
-			sum += Integer.parseInt(request.getParameter("fri5"));
-			sum += Integer.parseInt(request.getParameter("fri6"));
-			sum += Integer.parseInt(request.getParameter("fri7"));
-			sum += Integer.parseInt(request.getParameter("fri8"));
-			sum += Integer.parseInt(request.getParameter("fri9"));
+			sum += Integer.parseInt(request.getParameter("thi_mor"));
+			sum += Integer.parseInt(request.getParameter("thi_day"));
+			sum += Integer.parseInt(request.getParameter("thi_eve"));
 
-			sum += Integer.parseInt(request.getParameter("sat1"));
-			sum += Integer.parseInt(request.getParameter("sat2"));
-			sum += Integer.parseInt(request.getParameter("sat3"));
-			sum += Integer.parseInt(request.getParameter("sat4"));
-			sum += Integer.parseInt(request.getParameter("sat5"));
-			sum += Integer.parseInt(request.getParameter("sat6"));
-			sum += Integer.parseInt(request.getParameter("sat7"));
-			sum += Integer.parseInt(request.getParameter("sat8"));
-			sum += Integer.parseInt(request.getParameter("sat9"));
+			sum += Integer.parseInt(request.getParameter("fri_mor"));
+			sum += Integer.parseInt(request.getParameter("fri_day"));
+			sum += Integer.parseInt(request.getParameter("fri_eve"));
 
-			sum += Integer.parseInt(request.getParameter("sun1"));
-			sum += Integer.parseInt(request.getParameter("sun2"));
-			sum += Integer.parseInt(request.getParameter("sun3"));
-			sum += Integer.parseInt(request.getParameter("sun4"));
-			sum += Integer.parseInt(request.getParameter("sun5"));
-			sum += Integer.parseInt(request.getParameter("sun6"));
-			sum += Integer.parseInt(request.getParameter("sun7"));
-			sum += Integer.parseInt(request.getParameter("sun8"));
-			sum += Integer.parseInt(request.getParameter("sun9"));
+			sum += Integer.parseInt(request.getParameter("sat_mor"));
+			sum += Integer.parseInt(request.getParameter("sat_day"));
+			sum += Integer.parseInt(request.getParameter("sat_eve"));
+
+			sum += Integer.parseInt(request.getParameter("sun_mor"));
+			sum += Integer.parseInt(request.getParameter("sun_day"));
+			sum += Integer.parseInt(request.getParameter("sun_eve"));
+
 
 
 
@@ -117,14 +77,6 @@ public class Check extends HttpServlet {
 	    scn.setNum(sum);
 	    //リクエストスコープに保存
 	    request.setAttribute("result", scn);
-
-
-		//セッションスコープに保存
-
-		/*HttpSession session = request.getSession();
-		session.setAttribute("Sum", scn);
-		 */
-
 
 		//forward to CheckResult.jsp
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/CheckResult.jsp");

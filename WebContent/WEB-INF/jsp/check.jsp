@@ -29,102 +29,102 @@ Day Su = (Day)application.getAttribute("Sunday");
  --%>
 <%= M.getDayname() %><br>
 朝のタスク<%= M.getMorningtask() %><br>
-Very Good!<input type = "radio" name="mon1" value = "3"><br>
-Good!<input type = "radio" name="mon2" value = "2"><br>
-Normal<input type = "radio" name="mon3" value = "1"><br>
+Very Good!<input type = "radio" name="mon_mor" value = "3"><br>
+Good!<input type = "radio" name="mon_mor" value = "2"><br>
+Normal<input type = "radio" name="mon_mor" value = "1"><br>
 昼のタスク<%=M.getDaytask() %><br>
-Very Good!<input type = "radio" name="mon4" value = "3"><br>
-Good!<input type = "radio" name="mon5" value = "2"><br>
-Normal<input type = "radio" name="mon6" value = "1"><br>
+Very Good!<input type = "radio" name="mon_day" value = "3"><br>
+Good!<input type = "radio" name="mon_day" value = "2"><br>
+Normal<input type = "radio" name="mon_day" value = "1"><br>
 夕方のタスク<%=M.getEveningtask() %><br>
-Very Good!<input type = "radio" name="mon7" value = "3"><br>
-Good!<input type = "radio" name="mon8" value = "2"><br>
-Normal<input type = "radio" name="mon9" value = "1"><br>
+Very Good!<input type = "radio" name="mon_eve" value = "3"><br>
+Good!<input type = "radio" name="mon_eve" value = "2"><br>
+Normal<input type = "radio" name="mon_eve" value = "1"><br>
 
 <h3>*********************************************************************************::</h3>
 <%= T.getDayname() %><br>
 朝のタスク<%= T.getMorningtask() %><br>
-Very Good!<input type = "radio" name="tue1" value = "3"><br>
-Good!<input type = "radio" name="tue2" value = "2"><br>
-Normal<input type = "radio" name="tue3" value = "1"><br>
+Very Good!<input type = "radio" name="tue_mor" value = "3"><br>
+Good!<input type = "radio" name="tue_mor" value = "2"><br>
+Normal<input type = "radio" name="tue_mor" value = "1"><br>
 昼のタスク<%=T.getDaytask() %><br>
-Very Good!<input type = "radio" name="tue4" value = "3"><br>
-Good!<input type = "radio" name="tue5" value = "2"><br>
-Normal<input type = "radio" name="tue6" value = "1"><br>
+Very Good!<input type = "radio" name="tue_day" value = "3"><br>
+Good!<input type = "radio" name="tue_day" value = "2"><br>
+Normal<input type = "radio" name="tue_day" value = "1"><br>
 夕方のタスク<%=T.getEveningtask() %><br>
-Very Good!<input type = "radio" name="tue7" value = "3"><br>
-Good<input type = "radio" name="tue8" value = "2"><br>
-Normal<input type = "radio" name="tue9" value = "1"><br>
+Very Good!<input type = "radio" name="tue_eve" value = "3"><br>
+Good<input type = "radio" name="tue_eve" value = "2"><br>
+Normal<input type = "radio" name="tue_eve" value = "1"><br>
 <h3>*********************************************************************************::</h3>
 <%= W.getDayname() %><br>
 朝のタスク<%= W.getMorningtask() %><br>
-Very Good<input type = "radio" name="wed1" value = "3"><br>
-Good!<input type = "radio" name="wed2" value = "2"><br>
-Normal<input type = "radio" name="wed3" value = "1"><br>
+Very Good<input type = "radio" name="wed_mor" value = "3"><br>
+Good!<input type = "radio" name="wed_mor" value = "2"><br>
+Normal<input type = "radio" name="wed_mor" value = "1"><br>
 昼のタスク<%=W.getDaytask() %><br>
-Very Good!<input type = "radio" name="wed4" value = "3"><br>
-Good<input type = "radio" name="wed5" value = "2"><br>
-Normal<input type = "radio" name="wed6" value = "1"><br>
+Very Good!<input type = "radio" name="wed_day" value = "3"><br>
+Good<input type = "radio" name="wed_day" value = "2"><br>
+Normal<input type = "radio" name="wed_day" value = "1"><br>
 夕方のタスク<%=W.getEveningtask() %><br>
-Very Good!<input type = "radio" name="wed7" value = "3"><br>
-Good!<input type = "radio" name="wed8" value = "2"><br>
-Normal<input type = "radio" name="wed9" value = "1"><br>
+Very Good!<input type = "radio" name="wed_eve" value = "3"><br>
+Good!<input type = "radio" name="wed_eve" value = "2"><br>
+Normal<input type = "radio" name="wed_eve" value = "1"><br>
 <h3>*********************************************************************************::</h3>
 <%= Th.getDayname() %><br>
 朝のタスク<%= Th.getMorningtask() %><br>
-Very Good!<input type = "radio" name="thi1" value = "3"><br>
-Good!<input type = "radio" name="thi2" value = "2"><br>
-Normal<input type = "radio" name="thi3" value = "1"><br>
+Very Good!<input type = "radio" name="thi_mor" value = "3"><br>
+Good!<input type = "radio" name="thi_mor" value = "2"><br>
+Normal<input type = "radio" name="thi_mor" value = "1"><br>
 昼のタスク<%=Th.getDaytask() %><br>
-Very Good!<input type = "radio" name="thi4" value = "3"><br>
-Good!<input type = "radio" name="thi5" value = "2"><br>
-Normal<input type = "radio" name="thi6" value = "1"><br>
+Very Good!<input type = "radio" name="thi_day" value = "3"><br>
+Good!<input type = "radio" name="thi_day" value = "2"><br>
+Normal<input type = "radio" name="thi_day" value = "1"><br>
 夕方のタスク<%=Th.getEveningtask() %><br>
-Very Good!<input type = "radio" name="thi7" value = "3"><br>
-Good!<input type = "radio" name="thi8" value = "2"><br>
-Normal<input type = "radio" name="thi9" value = "1"><br>
+Very Good!<input type = "radio" name="thi_eve" value = "3"><br>
+Good!<input type = "radio" name="thi_eve" value = "2"><br>
+Normal<input type = "radio" name="thi_eve" value = "1"><br>
 <h3>*********************************************************************************::</h3>
 <%= F.getDayname() %><br>
 朝のタスク<%= F.getMorningtask() %><br>
-Very Good!<input type = "radio" name="fri1" value = "3"><br>
-Good!<input type = "radio" name="fri2" value = "2"><br>
-Normal<input type = "radio" name="fri3" value = "1"><br>
+Very Good!<input type = "radio" name="fri_mor" value = "3"><br>
+Good!<input type = "radio" name="fri_mor" value = "2"><br>
+Normal<input type = "radio" name="fri_mor" value = "1"><br>
 昼のタスク<%=F.getDaytask() %><br>
-Very Good!<input type = "radio" name="fri4" value = "3"><br>
-Good!<input type = "radio" name="fri5" value = "2"><br>
-Normal<input type = "radio" name="fri6" value = "1"><br>
+Very Good!<input type = "radio" name="fri_day" value = "3"><br>
+Good!<input type = "radio" name="fri_day" value = "2"><br>
+Normal<input type = "radio" name="fri_day" value = "1"><br>
 夕方のタスク<%=F.getEveningtask() %><br>
-Very Good!<input type = "radio" name="fri7" value = "3"><br>
-Good!<input type = "radio" name="fri8" value = "2"><br>
-Normal<input type = "radio" name="fri9" value = "1"><br>
+Very Good!<input type = "radio" name="fri_eve" value = "3"><br>
+Good!<input type = "radio" name="fri_eve" value = "2"><br>
+Normal<input type = "radio" name="fri_eve" value = "1"><br>
 <h3>*********************************************************************************::</h3>
 <%= Sa.getDayname() %><br>
 朝のタスク<%= Sa.getMorningtask() %><br>
-Very Good!<input type = "radio" name="sat1" value = "3"><br>
-Good!<input type = "radio" name="sat2" value = "2"><br>
-Normal<input type = "radio" name="sat3" value = "1"><br>
+Very Good!<input type = "radio" name="sat_mor" value = "3"><br>
+Good!<input type = "radio" name="sat_mor" value = "2"><br>
+Normal<input type = "radio" name="sat_mor" value = "1"><br>
 昼のタスク<%=Sa.getDaytask() %><br>
-Very Good!<input type = "radio" name="sat4" value = "3"><br>
-Good!<input type = "radio" name="sat5" value = "2"><br>
-Normal<input type = "radio" name="sat6" value = "1"><br>
+Very Good!<input type = "radio" name="sat_day" value = "3"><br>
+Good!<input type = "radio" name="sat_day" value = "2"><br>
+Normal<input type = "radio" name="sat_day" value = "1"><br>
 夕方のタスク<%=Sa.getEveningtask() %><br>
-Very Good!<input type = "radio" name="sat7" value = "3"><br>
-Good!<input type = "radio" name="sat8" value = "2"><br>
-Normal<input type = "radio" name="sat9" value = "1"><br>
+Very Good!<input type = "radio" name="sat_eve" value = "3"><br>
+Good!<input type = "radio" name="sat_eve" value = "2"><br>
+Normal<input type = "radio" name="sat_eve" value = "1"><br>
 <h3>*********************************************************************************::</h3>
 <%= Su.getDayname() %><br>
 朝のタスク<%= Su.getMorningtask() %><br>
-Very Good!<input type = "radio" name="sun1" value = "3"><br>
-Good!<input type = "radio" name="sun2" value = "2"><br>
-Normal<input type = "radio" name="sun3" value = "1"><br>
+Very Good!<input type = "radio" name="sun_mor" value = "3"><br>
+Good!<input type = "radio" name="sun_mor" value = "2"><br>
+Normal<input type = "radio" name="sun_mor" value = "1"><br>
 昼のタスク<%=Su.getDaytask() %><br>
-Very Good!<input type = "radio" name="sun4" value = "3"><br>
-Good!<input type = "radio" name="sun5" value = "2"><br>
-Normal<input type = "radio" name="sun6" value = "1"><br>
+Very Good!<input type = "radio" name="sun_day" value = "3"><br>
+Good!<input type = "radio" name="sun_day" value = "2"><br>
+Normal<input type = "radio" name="sun_day" value = "1"><br>
 夕方のタスク<%=Su.getEveningtask() %><br>
-Very Good!<input type = "radio" name="sun7" value = "3"><br>
-Good!<input type = "radio" name="sun8" value = "2"><br>
-Normal<input type = "radio" name="sun9" value = "1"><br>
+Very Good!<input type = "radio" name="sun_eve" value = "3"><br>
+Good!<input type = "radio" name="sun_eve" value = "2"><br>
+Normal<input type = "radio" name="sun_eve" value = "1"><br>
 <p></p>
 <input type="submit" value = "送信">
 </form>
