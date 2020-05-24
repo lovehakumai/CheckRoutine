@@ -69,13 +69,13 @@ public class Check extends HttpServlet {
 			sum += Integer.parseInt(request.getParameter("sun_day"));
 			sum += Integer.parseInt(request.getParameter("sun_eve"));
 
-			String[] array = {"mon","tue","wed","thi","fri","sat","sun"};
+			/*String[] array = {"mon","tue","wed","thi","fri","sat","sun"};
 			String[] timeline = {"_mor","_day","_eve"};
 			for (String youbi : array) {
 				for (String time : timeline) {
 				sum += Integer.parseInt(request.getParameter("youi" + "time"));
 			}
-			}
+			}*/
 
 
 
